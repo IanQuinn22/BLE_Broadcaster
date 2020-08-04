@@ -16,13 +16,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Switch
+    <Button
         android:id="@+id/publish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Publish"
+        android:layout_marginBottom="40dp"
+        android:text="BROADCAST"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/broadcast_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Message"
+        app:layout_constraintBottom_toTopOf="@+id/publish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/chat"
+        android:layout_width="390dp"
+        android:layout_height="486dp"
+        android:layout_marginTop="5dp"
+        android:text="BLUETOOTH CHAT:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subscribe" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
